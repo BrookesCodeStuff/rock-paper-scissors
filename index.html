@@ -8,9 +8,14 @@
 </head>
 <body>
   <script>
-    let options = ["rock", "paper", "scissors"];
+    const options = ["rock", "paper", "scissors"];
+    let playerChoice, compChoice;
     function computerPlay() {
-      return options[Math.floor(Math.random() * options.length)]
+      compChoice = options[Math.floor(Math.random() * options.length)]
+    }
+
+    function playerSelection() {
+      playerChoice = prompt("Choose one: rock, paper, or scissors");
     }
   </script>
 </body>
